@@ -1,0 +1,6 @@
+{
+  "name": "Aplikasi Kasir Percetakan",
+  "description": "Aplikasi kasir percetakan profesional dengan integasi database Supabase untuk pemantauan pesanan, laporan keuangan, dan manajemen harga.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

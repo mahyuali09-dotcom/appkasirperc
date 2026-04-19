@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kasir Percetakan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        --color-primary-50: 239 249 255;
+        --color-primary-100: 223 241 255;
+        --color-primary-200: 188 230 255;
+        --color-primary-300: 137 215 255;
+        --color-primary-400: 82 187 255;
+        --color-primary-500: 41 157 255;
+        --color-primary-600: 15 126 247;
+        --color-primary-700: 8 99 217;
+        --color-primary-800: 11 82 178;
+        --color-primary-900: 15 68 142;
+        --color-primary-950: 11 41 84;
+        --font-family-sans: 'Inter', sans-serif;
+      }
+      /* Responsive Table Styles */
+      @media (max-width: 640px) {
+        .responsive-table thead {
+          display: none;
+        }
+        .responsive-table tbody, .responsive-table tr {
+          display: block;
+          width: 100%;
+        }
+        .responsive-table td {
+          display: block;
+          width: 100%;
+          padding-left: 50%;
+          position: relative;
+          text-align: right; /* Default align content to the right */
+          border-bottom: 1px solid #f1f5f9; /* slate-100 */
+          padding-top: 0.75rem;
+          padding-bottom: 0.75rem;
+          padding-right: 1.5rem;
+        }
+        .responsive-table tr {
+          margin-bottom: 1rem;
+          border: 1px solid #e2e8f0; /* slate-200 */
+          border-radius: 0.5rem; /* rounded-lg */
+          overflow: hidden;
+          background-color: white;
+        }
+        .responsive-table td:last-child {
+          border-bottom: 0;
+        }
+        .responsive-table td:before {
+          content: attr(data-label);
+          position: absolute;
+          left: 1.5rem;
+          width: 45%;
+          padding-right: 0.75rem;
+          white-space: nowrap;
+          text-align: left;
+          font-weight: 600; /* font-semibold */
+          color: #475569; /* slate-600 */
+        }
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                50: 'rgb(var(--color-primary-50) / <alpha-value>)',
+                100: 'rgb(var(--color-primary-100) / <alpha-value>)',
+                200: 'rgb(var(--color-primary-200) / <alpha-value>)',
+                300: 'rgb(var(--color-primary-300) / <alpha-value>)',
+                400: 'rgb(var(--color-primary-400) / <alpha-value>)',
+                500: 'rgb(var(--color-primary-500) / <alpha-value>)',
+                600: 'rgb(var(--color-primary-600) / <alpha-value>)',
+                700: 'rgb(var(--color-primary-700) / <alpha-value>)',
+                800: 'rgb(var(--color-primary-800) / <alpha-value>)',
+                900: 'rgb(var(--color-primary-900) / <alpha-value>)',
+                950: 'rgb(var(--color-primary-950) / <alpha-value>)',
+              },
+              secondary: {
+                50: '#f0fdfa',
+                100: '#ccfbf1',
+                200: '#99f6e4',
+                300: '#5eead4',
+                400: '#2dd4bf',
+                500: '#14b8a6',
+                600: '#0d9488',
+                700: '#0f766e',
+                800: '#115e59',
+                900: '#134e4a',
+                950: '#042f2e',
+              },
+            },
+            fontFamily: {
+              sans: ['var(--font-family-sans)', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html-to-image/1.11.11/html-to-image.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.5"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-50">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
