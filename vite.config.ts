@@ -19,6 +19,6 @@ export default defineConfig(({ mode }) => {
           '@': path.resolve(__dirname, '.'),
         }
       },
-	  base: process.env.NODE_ENV === 'production' ? '/aplikasikasirperc/' : '/',
+	  base: process.env.NODE_ENV === 'production' ? '/appkasirperc/' : '/',
     };
 });
