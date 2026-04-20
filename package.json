@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://mahyuali09-dotcom.github.io/appkasikasirperc",
+  "homepage": "https://mahyuali09-dotcom.github.io/appkasirperc",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
